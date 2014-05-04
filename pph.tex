@@ -2,6 +2,7 @@
 % Fonte & encodage
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[utf8]{inputenc}
+\usepackage{eurosym}
 %\usepackage[T1]{fontenc}
 \usepackage[french]{babel}
 \usepackage{color}
@@ -37,13 +38,13 @@
 
 	\chapter{TODO}
 	\begin{enumerate}
-		\item Bibliographie \cite{hellobib14} (fichier \texttt{.bib})
 		\item Source de chaque figure
 		\item Remplacer les titres ``in picture'' par des \texttt{caption}
 		\item Remplacer les footnotes (``Source : '') par des références de la bibliographie.
 		\item Insérer des images d'agrément
 		\item Bien centrer les graphiques
 		\item Actualiser la partie \ref{declin-systeme} (Système sur le déclin) : l'industrie musicale atteint l'équilibre grâce aux achats numériques (citer le podcast — Pascal Nègre)
+		\item Actualiser la partie sur Hadopi : autorité remise en cause, résultats mitigés mais rôle éducatif rempli ?
 	\end{enumerate}
 
 
@@ -141,24 +142,43 @@
 	Examiner les différentes solutions mises en place et estimer leur efficacité.
 
 	% ------------------------------------ %
+	% -- TENTATIVES DE RÉGULATION -------- %
+	\section{Tentatives de régulation}
+
+		\subsection{L'échec des DRM}
+		Les verrous numériques constituent la première réponse technique apportée au problème du piratage. Le but premier est de limiter la copie des fichiers afin d'empêcher leur mise à disposition sur les réseaux de partage. Ainsi, un fichier de musique protégé par un verrou numérique (on parle de \emph{DRM}, Digital Rights Management) ne pourra être écouté que par la personne l'ayant acheté. De même, l'installation d'un logiciel commercial nécessite souvent une clé d'activation : cette clé ne peut être utilisée qu'un nombre défini de fois (en général trois à cinq fois), ce qui empêche le partage massif et limite les possibilités de prêt.\\
+
+		En théorie, les DRM devaient régler le problème du téléchargement illégal par la suppression des sources. Mais en pratique, ces protections ont toujours été contournées rapidement par les plus ingénieux. Les produits initialement protégés sont donc finalement autant partagés que les autres une fois le verrou cassé. Apparaît alors un paradoxe : les clients ayant acheté une œuvre protégée par un tel verrou subissent les limites imposées par les DRM alors qu'une personne ayant piraté cette même œuvre disposera d'un fichier complètement libre.\\
+
+		C'est ce constat qui a conduit à un recul de l'utilisation des verrous numériques. À l'initiative du plus grand magasin de musique digitale \emph{iTunes Store} en 2007 \cite{itunes-plus-release}, la plupart des marchands de musique en ligne ont abandonné cette méthode de protection. Aujourd'hui, les DRM appliqués à d'autres types de contenus sont encore décriés
+
+		\subsection{Hadopi, une initiative française}
+		La loi Hadopi, crée à l'initiative de la ministre de la Culture et de la Communication Christine Albanel, a été adoptée par le Sénat et l'Assemblée Nationale en mai 2009 \cite{hadopi-adoption}. Elle comporte deux volets : un volet visant à éduquer la population grâce à un dispositif de ``riposte graduée'' et un volet d'amélioration de l'offre légale. Les sanctions de la ``riposte graduée'' viennent s'ajouter à celles déjà prévues en matière de contrefaçon – jusqu'à trois ans de prison et 300 000\euro\ d'amende\footnote{Peines prévues par la loi DADVSI (loi relative au droit d’auteur et aux droits voisins dans la société de l’information).}.\\
+
+		Techniquement, le dispositif Hadopi repose sur la surveillance de l'activité des réseaux \emph{peer-to-peer}. L'adresse IP des usagers téléchargeant certains fichiers surveillés (une liste d'environ 10 000 fichiers mise à jour régulièrement \cite{hadopi-fichiers-surveilles}) est consignée. À la première infraction, un message électronique est envoyé au contrevenant. Lorsqu'une deuxième infraction est repérée, c'est un courrier en recommandé qui parvient au domicile du téléchargeur. Enfin, si un troisième téléchargement illégal est détecté, la personne s'expose à des sanctions allant jusqu'à la coupure de l'accès à Internet pendant un an.\\
+
+		La volonté d'améliorer l'offre légale s'est traduite par la création du label \emph{PUR} \cite{label-pur}, qui certifie les boutiques en ligne. L'utilisateur bénéficie ainsi d'un repère lorsqu'il souhaite se procurer musique et films en toute légalité.
+
+		\subsection{SOPA/PIPA et ACTA}
+		L'année 2011 et le début de 2012 ont été marqués par deux grands projets de loi portant sur le droit d'auteur.\\
+
+		Aux États-Unis, le ``Stop Online Piracy Act'', proposé à la chambre des représentants – et son équivalent ``PROTECT IP''\footnote{Preventing Real Online Threats to Economic Creativity and Theft of Intellectual Property} proposé au sénat – visent tous deux à élargir les moyens disponibles pour la lutte contre le piratage et la contrefaçon. SOPA prévoit notamment des sanctions contre les sites donnant accès à du contenu protégé par le droit d'auteur. Ces sanctions s'étendent de la coupure des revenus publicitaires jusqu'au blocage complet. Ainsi, une procédure simplifiée serait mise à disposition des ayant-droits, leur permettant de faire fermer le site contrevenant sans faire appel à un juge. Les discussions concernant ces deux projets de lois ont été suspendues pour une durée indéterminée ``dans l'attente d'un accord'' \cite{suspension-sopa} suite aux nombreuses protestations, aux États-Unis comme à l'international.\\
+
+		ACTA\footnote{Anti-Counterfeiting Trade Agreement}, quant à lui, est un traité international négocié avec 39 pays \cite{no-to-acta} depuis 2007. Il porte sur la propriété intellectuelle (notamment le respect du droit d'auteur sur Internet) et la contrefaçon. ACTA prévoyait de rendre responsable les fournisseurs d'accès internet (Orange, Free, etc) du comportement de leurs utilisateurs – leur donnant ainsi l'obligation de censurer leur propre réseau. Il a été signé par le comité exécutif de l'Union Européenne le 26 janvier 20125 malgré les remarques du parlement européen et les nombreuses manifestations à l'encontre de ce projet. Cependant, le projet de loi a été rejeté le 4 juillet 2012 par le Parlement européen \cite{acta-vote} à une large majorité\footnote{478 voix contre, 39 voix pour et 165 abstentions}.
+
+	% ------------------------------------ %
+
+	% ------------------------------------ %
 	% -- DES COUPS DE FILET MÉDIATISÉS --- %
 	\section{Des coups de filet médiatisés}
+	Plusieurs des grandes entreprises victimes du piratage ont élaboré des processus de traitement des infractions au droit d'auteur. En réaction à la montée en flèche de l'utilisation du \emph{streaming}, les grands studios de production ont mis sur pied un plan de lutte contre ces nouveaux moyens de piratages \cite{lutte-streaming}. Faute de pouvoir faire fermer les sites jugés illégaux hébergés à l'étranger, ce plan propose de bloquer l'accès au niveau des fournisseurs d'accès à internet. Le ``déréférencement'' de ces sites auprès des grands moteurs de recherche comme Google et Bing est également demandé. Unes des autres solutions régulièrement mise en avant est de bloquer leurs revenus publicitaires.\\
+
 	\begin{enumerate}
 		\item Allostreaming -$>$ remplaçants
 		\item Megaupload -$>$ mega.co.nz (logo, clip, communication)
 	\end{enumerate}
 	Beaucoup de presse et d'interrogations sur le statut d'hébergeur. Mais solutions de remplacement : lois du marché (demande + faibles barrières à l'entrée =$>$ offre).
 	Utilisation de technologies de chiffrement =$>$ ~impossible de bloquer de manière automatique si l'on souhaite respecter le statut d'hébergeur et la neutralité du net.
-	% ------------------------------------ %
-
-	% ------------------------------------ %
-	% -- TENTATIVES DE RÉGULATION -------- %
-	\section{Tentatives de régulation}
-	\begin{enumerate}
-		\item Échec des DRM
-		\item Hadopi
-		\item SOPA/PIPA
-	\end{enumerate}
 	% ------------------------------------ %
 
 	% ------------------------------------ %
