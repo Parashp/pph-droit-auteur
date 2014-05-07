@@ -7,7 +7,7 @@
 \usepackage[french]{babel}
 \usepackage{color}
 % Réduire les marges
-%\usepackage{fullpage}
+\usepackage{fullpage}
 % Pour pouvoir insérer des images
 \usepackage{graphicx}
 \graphicspath{images/}
@@ -45,6 +45,7 @@
 		\item Bien centrer les graphiques
 		\item Actualiser la partie \ref{declin-systeme} (Système sur le déclin) : l'industrie musicale atteint l'équilibre grâce aux achats numériques (citer le podcast — Pascal Nègre)
 		\item Actualiser la partie sur Hadopi : autorité remise en cause, résultats mitigés mais rôle éducatif rempli ?
+		\item Actualiser la partie Implication de l'état (bilan Hollande)
 	\end{enumerate}
 
 
@@ -114,6 +115,12 @@
 	% ------------------------------------ %
 
 	% ------------------------------------ %
+	% -- POPCORN TIME -------------------- %
+	\section{Popcorn Time, une vidéothèque \emph{peer-to-peer}}
+	TODO. Popcorn Time : date de sortie, équipe initiale. Principe de fonctionnement : grid, recherche, sous-titres. S'appuie sur une API + le partage peer-to-peer surveillé par Hadopi. Projet open-source (lien GitHub). Donc aucun auteur à punir et impossible d'interdire le code du projet, qui n'est clairement pas illégal (seulement une couche de présentation jolie).
+	% ------------------------------------ %
+
+	% ------------------------------------ %
 	% -- UN SYSTÈME SUR LE DÉCLIN -------- %
 	\section{Un système sur le déclin}
 	\label{declin-systeme}
@@ -157,7 +164,10 @@
 
 		Techniquement, le dispositif Hadopi repose sur la surveillance de l'activité des réseaux \emph{peer-to-peer}. L'adresse IP des usagers téléchargeant certains fichiers surveillés (une liste d'environ 10 000 fichiers mise à jour régulièrement \cite{hadopi-fichiers-surveilles}) est consignée. À la première infraction, un message électronique est envoyé au contrevenant. Lorsqu'une deuxième infraction est repérée, c'est un courrier en recommandé qui parvient au domicile du téléchargeur. Enfin, si un troisième téléchargement illégal est détecté, la personne s'expose à des sanctions allant jusqu'à la coupure de l'accès à Internet pendant un an.\\
 
-		La volonté d'améliorer l'offre légale s'est traduite par la création du label \emph{PUR} \cite{label-pur}, qui certifie les boutiques en ligne. L'utilisateur bénéficie ainsi d'un repère lorsqu'il souhaite se procurer musique et films en toute légalité.
+		La volonté d'améliorer l'offre légale s'est traduite par la création du label \emph{PUR} \cite{label-pur}, qui certifie les boutiques en ligne. L'utilisateur bénéficie ainsi d'un repère lorsqu'il souhaite se procurer musique et films en toute légalité.\\
+
+		\label{hadopi-echec}
+		TODO: Une seule condamnation (600\euro d'amende et 15 jours de suspension d'accès à Internet), qui n'a même pas été appliquée \cite{hadopi-condamnation}. Même le rôle éducatif n'est pas vraiment rempli, simple changement de mode de téléchargement (chiffres).
 
 		\subsection{SOPA/PIPA et ACTA}
 		L'année 2011 et le début de 2012 ont été marqués par deux grands projets de loi portant sur le droit d'auteur.\\
@@ -200,15 +210,69 @@
 	% /// PISTES ALTERNATIVES DE RÉSOLUTION /////////////////// %
 	\chapter{Pistes alternatives de résolution}
 
-	\begin{enumerate}
-		\item Contournement des majors : explosion du marché indépendant
-		\begin{enumerate}
-		 	\item financement participatif
-		 	\item distribution directe
-		 \end{enumerate}
-		 \item Diversification de l'offre légale
-		 \item Quel rôle pour l'État ? (licence globale ?)
-	\end{enumerate}
+	% ------------------------------------ %
+	% -- DIVERSIFICATION DE L'OFFRE LÉGALE %
+	\section{La diversification de l'offre légale comme alternative au piratage}
+	Le secret de l'attractivité du téléchargement illégal tient en trois mots : gratuité, diversité, instantanéité. Le dernier point est particulièrement important : pour les films et séries, il est trop souvent impossible de les regarder légalement. En effet, jusqu'à récemment, la sortie en DVD d'un film avait lieu six mois après sa sortie en salle ; ce délai monte encore aujourd'hui jusqu'à un an pour ce qui est des séries étrangères, pourtant construites sur un modèle de diffusion hebdomadaire. Il semble alors que l'offre légale doit s'améliorer en priorité sur ces trois critères pour pouvoir faire face au téléchargement illégal.\\
+
+	Comme souligné par Pascal Nègre\footnote{Président Directeur Général d'Universal Music France} dans \cite{podcast-industrie-musicale}, l'industrie musicale est la première a avoir ``accompli sa révolution complète''. En effet, le prix de 0,99\euro\ par titre, la facilité d'achat et la grande disponibilité internationale des morceaux font du monde musical le plus avancé dans le domaine du numérique. De plus, l'abandon des verrous numériques est synonyme de réelle propriété pour le consommateur : il est libre de copier, sauvegarder, écouter où il le souhaite et éventuellement partager le fichier dont il a fait l'acquisition.\\
+
+	De même, l'offre dématérialisée en termes de jeux vidéo est très fournie. La plupart des jeux sortent désormais simultanément en boutiques et sur des plate-formes comme Steam. Du côté de la vidéo cependant, le constat est moins probant. Quelques initiatives présagent tout de même une amélioration : le délai de disponibilité des films à la demande (VOD) a été légalement fixé à quatre mois maximum \footnote{Source : SEVN}. Plusieurs chaînes françaises (\emph{TF1 Vision}, \emph{Orange Cinéma Séries}) donne quant à elles accès aux derniers épisodes de quelques séries américaines le lendemain de leur première diffusion – et donc au même niveau d'instantanéité que le téléchargement illégal.\\
+
+	Un autre mode de consommation, très populaire\footnote{Selon \emph{Sandvine}, le service de vidéo sur demande \emph{Netflix} représente plus de 30\% du trafic Internet aux États-Unis.} pour les films aux États-Unis, est l'abonnement illimité. Pour 8\$ par mois, la société \emph{Netflix} propose un accès illimité et instantané à tout son catalogue de films et de séries grâce en \emph{streaming}.\\
+
+	En France, \emph{Deezer} propose un service similaire dans le domaine musical : pour 10\euro\ par mois, tout le catalogue est accessible, y compris sur les appareils mobiles. Comme l'utilisateur ne fait que consulter des œuvres stockées chez le fournisseur et ne garde aucune copie sur sa machine, il souscrit effectivement à un service d'accès, et non plus pour être propriétaire d'une copie privée. Dans \cite{podcast-industrie-musicale}, Pascal Nègre, en défense des supports physiques, remarque que de tels services ne répondent pas au ``besoin naturel de collectionner''.\\
+
+	Ce type d'offres est le seul à offrir un confort comparable à celui du piratage : une fois l'abonnement payé, l'accès est ``gratuit'', illimité et immédiat, ce qui explique sa popularité croissante.
+
+	\begin{figure}[ht]
+		\begin{center}
+			\includegraphics[width=14cm]{images/spotify-croissance.png}
+			\caption{Croissance du service Spotify (source CNET)}
+		\end{center}
+	\end{figure}
+
+	Cependant, il est important de garder à l'esprit que ces services ne peuvent exister qu'à condition que les majors acceptent rendre disponible leur catalogue \cite{podcast-industrie-musicale}.
+	% ------------------------------------ %
+
+	% ------------------------------------ %
+	% -- LA DISTRIBUTION DIRECTE --------- %
+	\section{La distribution directe}
+	Le ``milieu indépendant'' peut être source d'idées novatrices. Qu'il s'agisse de groupes de musiques ou de petits studios de développement de jeu vidéo, leur échelle réduite leur permet d'expérimenter de nouveaux modes de distribution.\\
+
+	Le groupe \emph{Radiohead} a par exemple choisi de rendre le paiement de son album \emph{In Rainbows} optionnel \cite{radiohead}, à l'image d'un concert gratuit où l'on ferait passer le chapeau : on donne si l'on a aimé et si l'on en a les moyens.\\
+
+	Une initiative similaire a lieu de manière périodique dans le monde du jeu vidéo depuis mai 2010 : le \emph{Humble Indie Bundle} \cite{humble-indie-bundle}. Le principe est simple : proposer pendant une courte période un pack de plusieurs jeux produits par des studios indépendants à un prix déterminé par l'acheteur. Ce dernier peut également profiter de son achat pour faire un don à des associations caritatives. De plus, un mécanisme ingénieux a été mis en place : en payant plus que la moyenne, l'acheteur gagne le droit de télécharger la bande-son des jeux proposés, voire l'ensemble des jeux de l'édition précédente. Depuis le lancement, ce sont près de 80 millions de dollars qui auront été remportés \cite{humble-stats}.\\
+
+	Il s'agit dans les deux cas de modèles tirant parti des avantages de la distribution directe dématérialisée : les créateurs sont à la fois artistes et distributeurs, ils établissent une relation directe avec le consommateur. En coupant les intermédiaires, la rémunération de l'artiste est bien plus conséquente.
+
+	Cependant, avec ce modèle de distribution à bas prix, on est en droit de se poser la question de la pérennité. L'énorme volume de vente amène l’œuvre à rencontrer un grand public, et apporte donc une notoriété immédiate à ses créateurs. Mais ce public ne risque-t-il pas justement de perdre l'habitude de payer un prix ``normal'' ? D'après \cite{low-prices-low-expectations}, cette dévaluation comporte un grand risque de dévaluer la qualité des œuvres proposées.
+	% ------------------------------------ %
+
+	% ------------------------------------ %
+	% -- LA PRODUCTION COMMUNAUTAIRE ----- %
+	\section{La production communautaire}
+	
+
+	% ------------------------------------ %
+
+	% ------------------------------------ %
+	% -- PARTICIPATION DE L'ÉTAT --------- %
+	\section{Vers une participation accrue de l'État ?}
+	Dans le schéma présenté en première partie, le rôle du ``législateur'' est de s'assurer du bon développement de l'économie de la culture. Mais, en la personne de l'État, sa position ne pourrait-elle pas devenir plus active ?\\
+
+	Le gouvernement français a pris pour devoir l'éducation vis à vis des problématiques du droit d'auteur. L'Hadopi a ainsi lancé en juin 2011 une campagne de publicité multi-supports (télévision, Internet, affiches, radio). La Haute Instance n'ayant conduit qu'à une seule condamnation, elle est maintenant décrite par ses défenseurs comme un dispositif ``avant tout pédagogique'' \cite{podcast-industrie-musicale}.\\
+
+	Autre opération lancée par le Ministère de la Culture, la Carte Musique Jeune. Lancée en 2010, elle proposait aux 12-25 ans un financement à hauteur de 50\% sur leurs achats de musique digitale (dans la limite de 50\euro par an et par personne). Cette réduction était disponible auprès quatorze marchands partenaires dont l'iTunes Store ; mais la carte permettait aussi de s'abonner à la formule d'écoute illimitée chez Deezer. De quoi inciter certains à rentrer dans un cadre légal. Cependant, le dispositif a été considéré comme un échec \cite{carte-musique-jeune-echec} et a été retiré en octobre 2012 \cite{carte-musique-jeune-arret}.\\
+
+	La modification profonde de l'économie de la culture par l'arrivée d'Internet demande une réponse politique plus forte. Les solutions actuelles au téléchargement illégal, basées sur le blocage ou la surveillance, se révèlent soit inefficaces car contournées, soit liberticides. En effet, le filtrage proposé dans les projets ACTA et SOPA/PIPA, représente une porte ouverte à une censure facilitée de la part des gouvernements et d'entreprises privées \cite{quadrature-filtrage}.
+
+	TODO: mettre à jour
+	François Hollande, candidat à l'élection présidentielle de 2012, propose de rendre possible la dépénalisation du téléchargement par le biais d'une « licence globale ». Il s'agirait de taxer les abonnements à Internet et la publicité en ligne – comme c'est déjà le cas des supports vierges – afin de rémunérer les artistes (voir l'article « Hollande propose de remplacer la loi Hadopi par une forme de licence globale », page 5).
+	Bien que de nombreux détails posent problème (Ces taxes couvriront-elles réellement le manque à gagner ? Comment répartir cet argent entre les artistes ?), l'idée d'un « forfait » semble malgré tout bien plus réaliste que la mise en place d'un blocage réussissant à être à la fois efficace et respectueux des libertés fondamentales des internautes.\\
+
+	Création du poste de ministre de l'économie numérique (y compris après le remaniement ?). Ministre de la culture très active.
+	% ------------------------------------ %
 
 	% ///////////////////////////////////////////////////////// %
 
