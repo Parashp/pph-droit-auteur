@@ -41,6 +41,7 @@
 		\item Source de chaque figure
 		\item Remplacer les titres ``in picture'' par des \texttt{caption}
 		\item Remplacer les footnotes (``Source : '') par des références de la bibliographie.
+		\item Ajouter les auteurs de toutes les sources
 		\item Insérer des images d'agrément
 		\item Bien centrer les graphiques
 		\item Actualiser la partie \ref{declin-systeme} (Système sur le déclin) : l'industrie musicale atteint l'équilibre grâce aux achats numériques (citer le podcast — Pascal Nègre)
@@ -117,7 +118,7 @@
 	% ------------------------------------ %
 	% -- POPCORN TIME -------------------- %
 	\section{Popcorn Time, une vidéothèque \emph{peer-to-peer}}
-	TODO. Popcorn Time : date de sortie, équipe initiale. Principe de fonctionnement : grid, recherche, sous-titres. S'appuie sur une API + le partage peer-to-peer surveillé par Hadopi. Projet open-source (lien GitHub). Donc aucun auteur à punir et impossible d'interdire le code du projet, qui n'est clairement pas illégal (seulement une couche de présentation jolie).
+	En avril 2014, l'industrie cinématrographique française rencontre deux nouvelles menaces. D'une part l'arrivée de Netflix — le géant américain du \emph{streaming} vidéo illimité sur abonnement — en France se précise, avec une date d'ouverture du service prévue pour ??? 2014  \cite{netflix-date-france} . D'autre part, une application, Popcorn Time  \cite{popcorn-time}, est publiée le ??? avril 2014. Elle fait rapidement parler d'elle et reçoit beaucoup d'attention dans les médias spécialisés \cite{popcorn-time-article}. Et pour cause : Popcorn Time pourrait bien devenir le Napster de la vidéo. En effet, cette application propose, tout comme Netflix, de regarder des films et séries en \emph{streaming}, immédiatement, via une interface très intuitive. Seule différence : le visionnage est gratuit, puisqu'il s'agit de films piratés, diffusés en \emph{peer-to-peer}. L'application est par ailleurs \emph{open-source} : son code est publié \cite{popcorn-time-github} et donc facilement distribuable. L'application étant développée par une communauté, les inévitables poursuites judiciaires à venir ne pourront pas porter sur un auteur en particulier. De plus, le caractère décentralisé du logiciel rend virtuellement impossible son blocage.
 	% ------------------------------------ %
 
 	% ------------------------------------ %
@@ -146,7 +147,6 @@
 	% ///////////////////////////////////////////////////////// %
 	% /// LES MESURES EN APPLICATION ////////////////////////// %
 	\chapter{Les mesures en application}
-	Examiner les différentes solutions mises en place et estimer leur efficacité.
 
 	% ------------------------------------ %
 	% -- TENTATIVES DE RÉGULATION -------- %
@@ -167,7 +167,11 @@
 		La volonté d'améliorer l'offre légale s'est traduite par la création du label \emph{PUR} \cite{label-pur}, qui certifie les boutiques en ligne. L'utilisateur bénéficie ainsi d'un repère lorsqu'il souhaite se procurer musique et films en toute légalité.\\
 
 		\label{hadopi-echec}
-		TODO: Une seule condamnation (600\euro d'amende et 15 jours de suspension d'accès à Internet), qui n'a même pas été appliquée \cite{hadopi-condamnation}. Même le rôle éducatif n'est pas vraiment rempli, simple changement de mode de téléchargement (chiffres).
+		Après ??? ans de fonctionnement, le bilan est mitigé. Avec ??? e-mails d'avertissement envoyés par jour, seule une condamnation a été prononcée : un ??? a écopé de 600\euro d'amende et 15 jours de suspension d'accès à Internet pour avoir téléchargé illégalement des morceaux de musique. Cependant, même cette unique peine n'a pas été appliquée. \cite{hadopi-condamnation}.
+
+		TODO: graphique mode de téléchargement VS temps.
+
+		On pourrait saluer la réussite de la mission éducative de l'Hadopi, puisque les chiffres du téléchargement \emph{peer-to-peer} en France montrent une baisse considérable. Il faut cependant prendre en compte le développement des nouveaux modes opératoires (téléchargement direct, streaming) décrits en première partie, dont la popularité ne peut être mesurée avec précision. Ces chiffres pourraient alors s'expliquer par un simple changement des habitudes des français.
 
 		\subsection{SOPA/PIPA et ACTA}
 		L'année 2011 et le début de 2012 ont été marqués par deux grands projets de loi portant sur le droit d'auteur.\\
@@ -181,24 +185,12 @@
 	% ------------------------------------ %
 	% -- DES COUPS DE FILET MÉDIATISÉS --- %
 	\section{Des coups de filet médiatisés}
-	Plusieurs des grandes entreprises victimes du piratage ont élaboré des processus de traitement des infractions au droit d'auteur. En réaction à la montée en flèche de l'utilisation du \emph{streaming}, les grands studios de production ont mis sur pied un plan de lutte contre ces nouveaux moyens de piratages \cite{lutte-streaming}. Faute de pouvoir faire fermer les sites jugés illégaux hébergés à l'étranger, ce plan propose de bloquer l'accès au niveau des fournisseurs d'accès à internet. Le ``déréférencement'' de ces sites auprès des grands moteurs de recherche comme Google et Bing est également demandé. Unes des autres solutions régulièrement mise en avant est de bloquer leurs revenus publicitaires.\\
+	Plusieurs des grandes entreprises victimes du piratage ont élaboré des processus de traitement des infractions au droit d'auteur. En réaction à la montée en flèche de l'utilisation du \emph{streaming}, les grands studios de production ont mis sur pied un plan de lutte contre ces nouveaux moyens de piratages \cite{lutte-streaming}. Faute de pouvoir faire fermer certains sites jugés illégaux hébergés à l'étranger, ce plan propose de bloquer l'accès au niveau des fournisseurs d'accès à internet. Le ``déréférencement'' de ces sites auprès des grands moteurs de recherche comme Google et Bing est également demandé. Unes des autres solutions régulièrement mise en avant est de bloquer leurs revenus publicitaires.\\
 
-	\begin{enumerate}
-		\item Allostreaming -$>$ remplaçants
-		\item Megaupload -$>$ mega.co.nz (logo, clip, communication)
-	\end{enumerate}
-	Beaucoup de presse et d'interrogations sur le statut d'hébergeur. Mais solutions de remplacement : lois du marché (demande + faibles barrières à l'entrée =$>$ offre).
-	Utilisation de technologies de chiffrement =$>$ ~impossible de bloquer de manière automatique si l'on souhaite respecter le statut d'hébergeur et la neutralité du net.
-	% ------------------------------------ %
+	Ces efforts ont abouti, en 2013, à deux grandes victoires : la fermeture de l'annuaire de lien Allostreaming \cite{allostreaming} et de l'hébergeur de fichiers Megaupload. Ce dernier a subi une fin médiatisée \cite{megaupload-fermeture} suite à un raid de police et une saisie des serveurs. Son fondateur, l'extravagant ``Kim Dotcom'', dénonce le préjudice porté aux utilisateurs légitimes du service, qui ont ainsi perdu accès à leurs données personnelles \cite{megaupload-prejudice}. Le procès est prévu pour ??? et devrait se baser sur des accusations de ??? et ??? \cite{megaupload-proces}.\\
 
-	% ------------------------------------ %
-	% -- NOUVEAUX MODÈLES ÉCONOMIQUE ----- %
-	\section{Nouveaux modèles économique}
-	\begin{enumerate}
-		\item Distribution numérique (facilité, prix, DRM, pas de hausse de la rémunération malgré les coûts de distribution réduits)
-		\item Freemium (Deezer, etc : très faible rémunération)
-		\item Offres illimitées
-	\end{enumerate}
+	Mais, la demande restant fortement présente, et les barrières à l'entrée faibles, de nombreux services sont venus prendre leur place. En particulier, ``Kim Dotcom'' a mis sur pied le succeseur de Megaupload, qui a ouvert en ???. Cette fois, la légalité du service est assurée par le fait que toutes les données sont chiffrée côté client avant d'êtres envoyées vers les serveurs. Ainsi, l'hébergeur n'a aucune visibilité sur le contenu de ses utilisateurs.
+
 	% ------------------------------------ %
 
 	% ///////////////////////////////////////////////////////// %
@@ -221,7 +213,7 @@
 
 	Un autre mode de consommation, très populaire\footnote{Selon \emph{Sandvine}, le service de vidéo sur demande \emph{Netflix} représente plus de 30\% du trafic Internet aux États-Unis.} pour les films aux États-Unis, est l'abonnement illimité. Pour 8\$ par mois, la société \emph{Netflix} propose un accès illimité et instantané à tout son catalogue de films et de séries grâce en \emph{streaming}.\\
 
-	En France, \emph{Deezer} propose un service similaire dans le domaine musical : pour 10\euro\ par mois, tout le catalogue est accessible, y compris sur les appareils mobiles. Comme l'utilisateur ne fait que consulter des œuvres stockées chez le fournisseur et ne garde aucune copie sur sa machine, il souscrit effectivement à un service d'accès, et non plus pour être propriétaire d'une copie privée. Dans \cite{podcast-industrie-musicale}, Pascal Nègre, en défense des supports physiques, remarque que de tels services ne répondent pas au ``besoin naturel de collectionner''.\\
+	En France, \emph{Deezer} propose un service similaire dans le domaine musical : pour 10\euro\ par mois, tout le catalogue est accessible, y compris sur les appareils mobiles. Comme l'utilisateur ne fait que consulter des œuvres stockées chez le fournisseur et ne garde aucune copie sur sa machine, il souscrit effectivement à un service d'accès, et non plus pour être propriétaire d'une copie privée. Dans \cite{podcast-industrie-musicale}, Pascal Nègre, en défense des supports physiques, remarque que de tels services ne répondent pas au ``besoin naturel de collectionner'' ressenti, d'après lui, par tout un chacun.\\
 
 	Ce type d'offres est le seul à offrir un confort comparable à celui du piratage : une fois l'abonnement payé, l'accès est ``gratuit'', illimité et immédiat, ce qui explique sa popularité croissante.
 
@@ -244,9 +236,9 @@
 
 	Une initiative similaire a lieu de manière périodique dans le monde du jeu vidéo depuis mai 2010 : le \emph{Humble Indie Bundle} \cite{humble-indie-bundle}. Le principe est simple : proposer pendant une courte période un pack de plusieurs jeux produits par des studios indépendants à un prix déterminé par l'acheteur. Ce dernier peut également profiter de son achat pour faire un don à des associations caritatives. De plus, un mécanisme ingénieux a été mis en place : en payant plus que la moyenne, l'acheteur gagne le droit de télécharger la bande-son des jeux proposés, voire l'ensemble des jeux de l'édition précédente. Depuis le lancement, ce sont près de 80 millions de dollars qui auront été remportés \cite{humble-stats}.\\
 
-	Il s'agit dans les deux cas de modèles tirant parti des avantages de la distribution directe dématérialisée : les créateurs sont à la fois artistes et distributeurs, ils établissent une relation directe avec le consommateur. En coupant les intermédiaires, la rémunération de l'artiste est bien plus conséquente.
+	Il s'agit dans les deux cas de modèles tirant parti des avantages de la distribution directe dématérialisée : les créateurs sont à la fois artistes et distributeurs, ils établissent une relation directe avec le consommateur. En écartant les intermédiaires, la rémunération de l'artiste est bien plus conséquente.
 
-	Cependant, avec ce modèle de distribution à bas prix, on est en droit de se poser la question de la pérennité. L'énorme volume de vente amène l’œuvre à rencontrer un grand public, et apporte donc une notoriété immédiate à ses créateurs. Mais ce public ne risque-t-il pas justement de perdre l'habitude de payer un prix ``normal'' ? D'après \cite{low-prices-low-expectations}, cette dévaluation comporte un grand risque de dévaluer la qualité des œuvres proposées.
+	Cependant, avec ce modèle de distribution à bas prix, on est en droit de se poser la question de la pérennité. L'énorme volume de vente amène l’œuvre à rencontrer un grand public, et apporte donc une notoriété immédiate à ses créateurs. Mais ce public ne risque-t-il pas justement de perdre l'habitude de payer un prix ``normal'' ? D'après \cite{low-prices-low-expectations}, cette érosion des prix comporte un grand risque : celui de dévaluer la qualité des œuvres proposées.
 	% ------------------------------------ %
 
 	% ------------------------------------ %
@@ -261,17 +253,15 @@
 	\section{Vers une participation accrue de l'État ?}
 	Dans le schéma présenté en première partie, le rôle du ``législateur'' est de s'assurer du bon développement de l'économie de la culture. Mais, en la personne de l'État, sa position ne pourrait-elle pas devenir plus active ?\\
 
-	Le gouvernement français a pris pour devoir l'éducation vis à vis des problématiques du droit d'auteur. L'Hadopi a ainsi lancé en juin 2011 une campagne de publicité multi-supports (télévision, Internet, affiches, radio). La Haute Instance n'ayant conduit qu'à une seule condamnation, elle est maintenant décrite par ses défenseurs comme un dispositif ``avant tout pédagogique'' \cite{podcast-industrie-musicale}.\\
+	Le gouvernement français a pris pour devoir l'éducation vis à vis des problématiques du droit d'auteur. L'Hadopi a ainsi lancé en juin 2011 une campagne de publicité multi-supports (télévision, Internet, affiches, radio). La Haute Instance n'ayant conduit qu'à une seule condamnation, elle est d'ailleurs maintenant décrite par ses défenseurs comme un dispositif ``avant tout pédagogique'' \cite{podcast-industrie-musicale}.\\
 
-	Autre opération lancée par le Ministère de la Culture, la Carte Musique Jeune. Lancée en 2010, elle proposait aux 12-25 ans un financement à hauteur de 50\% sur leurs achats de musique digitale (dans la limite de 50\euro par an et par personne). Cette réduction était disponible auprès quatorze marchands partenaires dont l'iTunes Store ; mais la carte permettait aussi de s'abonner à la formule d'écoute illimitée chez Deezer. De quoi inciter certains à rentrer dans un cadre légal. Cependant, le dispositif a été considéré comme un échec \cite{carte-musique-jeune-echec} et a été retiré en octobre 2012 \cite{carte-musique-jeune-arret}.\\
+	Autre opération, lancée par le Ministère de la Culture : la Carte Musique Jeune. Lancée en 2010, elle proposait aux 12-25 ans un financement à hauteur de 50\% sur leurs achats de musique digitale (dans la limite de 50\euro par an et par personne). Cette réduction était disponible auprès quatorze marchands partenaires dont l'iTunes Store ; mais la carte permettait aussi de s'abonner à la formule d'écoute illimitée chez Deezer. De quoi inciter certains à rentrer dans un cadre légal. Cependant, le dispositif a été considéré comme un échec \cite{carte-musique-jeune-echec} et a été retiré en octobre 2012 \cite{carte-musique-jeune-arret}.\\
 
-	La modification profonde de l'économie de la culture par l'arrivée d'Internet demande une réponse politique plus forte. Les solutions actuelles au téléchargement illégal, basées sur le blocage ou la surveillance, se révèlent soit inefficaces car contournées, soit liberticides. En effet, le filtrage proposé dans les projets ACTA et SOPA/PIPA, représente une porte ouverte à une censure facilitée de la part des gouvernements et d'entreprises privées \cite{quadrature-filtrage}.
+	La modification profonde de l'économie de la culture par l'arrivée d'Internet demande une réponse politique plus forte. Les solutions actuelles au téléchargement illégal, basées sur le blocage ou la surveillance, se révèlent soit inefficaces car contournées, soit liberticides. En effet, le filtrage proposé dans les projets ACTA et SOPA/PIPA, représente une porte ouverte à une censure facilitée de la part des gouvernements et d'entreprises privées \cite{quadrature-filtrage}.\\
 
-	TODO: mettre à jour
-	François Hollande, candidat à l'élection présidentielle de 2012, propose de rendre possible la dépénalisation du téléchargement par le biais d'une « licence globale ». Il s'agirait de taxer les abonnements à Internet et la publicité en ligne – comme c'est déjà le cas des supports vierges – afin de rémunérer les artistes (voir l'article « Hollande propose de remplacer la loi Hadopi par une forme de licence globale », page 5).
-	Bien que de nombreux détails posent problème (Ces taxes couvriront-elles réellement le manque à gagner ? Comment répartir cet argent entre les artistes ?), l'idée d'un « forfait » semble malgré tout bien plus réaliste que la mise en place d'un blocage réussissant à être à la fois efficace et respectueux des libertés fondamentales des internautes.\\
+	François Hollande, dans son programme pour les élections présidentielles de 2012, proposait de rendre possible la dépénalisation du téléchargement par le biais d'une ``licence globale''. Il s'agirait de taxer les abonnements à Internet et la publicité en ligne – comme c'est déjà le cas pour les supports vierges – afin de rémunérer les artistes \cite{licence-gloable}. L'idée a été citée à nouveau à quelques occasions, mais les détails manquent : ces taxes couvriront-elles réellement le manque à gagner induit par le piratage ? Comment répartir ces nouveaux revenus entre les artistes ? Comment rendre cette solution adaptée pour un marché maintenant global ?\\
 
-	Création du poste de ministre de l'économie numérique (y compris après le remaniement ?). Ministre de la culture très active.
+	Malgré toute ces interrogations, l'idée d'un ``forfait'' semble malgré toujours plus réaliste que la mise en place d'un blocage réussissant à être à la fois véritablement efficace et respectueux des libertés fondamentales des internautes.
 	% ------------------------------------ %
 
 	% ///////////////////////////////////////////////////////// %
