@@ -12,7 +12,14 @@
 \usepackage{graphicx}
 \graphicspath{images/}
 % Pour pouvoir insérer des hyperliens
+\usepackage{url}
 \usepackage{hyperref}
+% 'leo' url style (smaller fonts)
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+\urlstyle{leo}
 
 % Ne veut pas afficher le mot 'Chapitre' avant chaque chapitre
 \usepackage{titlesec}
@@ -43,7 +50,7 @@
 		\item Ajouter les auteurs de toutes les sources
 		\item Insérer des images d'agrément
 		\item Bien centrer les graphiques
-		\item Actualiser la partie \ref{declin-systeme} (Système sur le déclin) : l'industrie musicale atteint l'équilibre grâce aux achats numériques (citer le podcast — Pascal Nègre)
+		\item Actualiser la partie (Système sur le déclin) : l'industrie musicale atteint l'équilibre grâce aux achats numériques (citer le podcast — Pascal Nègre)
 		\item Actualiser la partie sur Hadopi : autorité remise en cause, résultats mitigés mais rôle éducatif rempli ?
 		\item Actualiser la partie Implication de l'état (bilan Hollande)
 	\end{enumerate}
@@ -84,7 +91,7 @@
 
 	\begin{figure}[ht]
 		\includegraphics[width=13cm]{images/repartition-des-revenus.png}
-		\caption{Répartition moyenne des revenus sur la vente d'un disque (hors taxes). Source : Numérama}
+		\caption{Répartition moyenne des revenus sur la vente d'un disque (hors taxes). Source : Numerama}
 	\end{figure}
 
 	Il est important de remarquer qu'avec ce schéma d'organisation, les auteurs se partagent en général 10 à 15\% seulement du prix final payé par le consommateur\footnote{Hors taxes. Source : Epok, un hebdomadaire distribué par la FNAC.}. Ils peuvent cependant, dans une certaine mesure, s'appuyer sur d'autres sources de revenus : les diffusions à la radio ou à la télévision, les concerts, les locations, etc.
@@ -117,7 +124,7 @@
 	% ------------------------------------ %
 	% -- POPCORN TIME -------------------- %
 	\section{Popcorn Time, une vidéothèque \emph{peer-to-peer}}
-	En avril 2014, l'industrie cinématrographique française rencontre deux nouvelles menaces. D'une part l'arrivée de Netflix — le géant américain du \emph{streaming} vidéo illimité sur abonnement — en France se précise, avec une date d'ouverture du service prévue pour ??? 2014  \cite{netflix-date-france} . D'autre part, une application, Popcorn Time  \cite{popcorn-time}, est publiée le ??? avril 2014. Elle fait rapidement parler d'elle et reçoit beaucoup d'attention dans les médias spécialisés \cite{popcorn-time-article}. Et pour cause : Popcorn Time pourrait bien devenir le Napster de la vidéo. En effet, cette application propose, tout comme Netflix, de regarder des films et séries en \emph{streaming}, immédiatement, via une interface très intuitive. Seule différence : le visionnage est gratuit, puisqu'il s'agit de films piratés, diffusés en \emph{peer-to-peer}. L'application est par ailleurs \emph{open-source} : son code est publié \cite{popcorn-time-github} et donc facilement distribuable. L'application étant développée par une communauté, les inévitables poursuites judiciaires à venir ne pourront pas porter sur un auteur en particulier. De plus, le caractère décentralisé du logiciel rend virtuellement impossible son blocage.
+	En avril 2014, l'industrie cinématrographique française rencontre deux nouvelles menaces. D'une part l'arrivée de Netflix — le géant américain du \emph{streaming} vidéo illimité sur abonnement — en France se précise, avec une date d'ouverture du service prévue pour ??? 2014  \cite{netflix-date-france} . D'autre part, une application, Popcorn Time  \cite{popcorn-time}, est publiée début mars 2014. Elle fait rapidement parler d'elle et reçoit beaucoup d'attention dans les médias spécialisés \cite{popcorn-time-article}. Et pour cause : Popcorn Time pourrait bien devenir le Napster de la vidéo. En effet, cette application propose, tout comme Netflix, de regarder des films et séries en \emph{streaming}, immédiatement, via une interface très intuitive. Seule différence : le visionnage est gratuit, puisqu'il s'agit de films piratés, diffusés en \emph{peer-to-peer}. L'application est par ailleurs \emph{open-source} : son code est publié \cite{popcorn-time-github} et donc facilement distribuable. L'application étant développée par une communauté, les inévitables poursuites judiciaires à venir ne pourront pas porter sur un auteur en particulier. De plus, le caractère décentralisé du logiciel rend virtuellement impossible son blocage.
 	% ------------------------------------ %
 
 	% ------------------------------------ %
@@ -165,11 +172,9 @@
 		La volonté d'améliorer l'offre légale s'est traduite par la création du label \emph{PUR} \cite{label-pur}, qui certifie les boutiques en ligne. L'utilisateur bénéficie ainsi d'un repère lorsqu'il souhaite se procurer musique et films en toute légalité.\\
 
 		\label{hadopi-echec}
-		Après ??? ans de fonctionnement, le bilan est mitigé. Avec ??? e-mails d'avertissement envoyés par jour, seule une condamnation a été prononcée : un ??? a écopé de 600\euro d'amende et 15 jours de suspension d'accès à Internet pour avoir téléchargé illégalement des morceaux de musique. Cependant, même cette unique peine n'a pas été appliquée. \cite{hadopi-condamnation}.
+		Après bientôt cinq ans de fonctionnement, le bilan est mitigé. Avec 2 882 788 e-mails d'avertissement envoyés à ce jour \cite{hadopi-chiffres}, seule une condamnation a été prononcée : un employé de la mairie de Montreuil a écopé de 600\euro d'amende et 15 jours de suspension d'accès à Internet pour avoir téléchargé illégalement deux albums. Cependant, même cette unique peine n'a pas été appliquée \cite{hadopi-condamnation}.
 
-		TODO: graphique mode de téléchargement VS temps.
-
-		On pourrait saluer la réussite de la mission éducative de l'Hadopi, puisque les chiffres du téléchargement \emph{peer-to-peer} en France montrent une baisse considérable. Il faut cependant prendre en compte le développement des nouveaux modes opératoires (téléchargement direct, streaming) décrits en première partie, dont la popularité ne peut être mesurée avec précision. Ces chiffres pourraient alors s'expliquer par un simple changement des habitudes des français.
+		On pourrait saluer la réussite de la mission éducative de l'Hadopi, puisque les chiffres du téléchargement \emph{peer-to-peer} en France ont montré une baisse considérable \cite{hadopi-recul-p2p}. Il faut cependant prendre en compte le développement des nouveaux modes opératoires (téléchargement direct, streaming) décrits en première partie, dont la popularité ne peut être mesurée avec précision. Ces chiffres pourraient alors s'expliquer par un simple changement des habitudes des français.
 
 		\subsection{SOPA/PIPA et ACTA}
 		L'année 2011 et le début de 2012 ont été marqués par deux grands projets de loi portant sur le droit d'auteur.\\
@@ -185,7 +190,7 @@
 	\section{Des coups de filet médiatisés}
 	Plusieurs des grandes entreprises victimes du piratage ont élaboré des processus de traitement des infractions au droit d'auteur. En réaction à la montée en flèche de l'utilisation du \emph{streaming}, les grands studios de production ont mis sur pied un plan de lutte contre ces nouveaux moyens de piratages \cite{lutte-streaming}. Faute de pouvoir faire fermer certains sites jugés illégaux hébergés à l'étranger, ce plan propose de bloquer l'accès au niveau des fournisseurs d'accès à internet. Le ``déréférencement'' de ces sites auprès des grands moteurs de recherche comme Google et Bing est également demandé. Unes des autres solutions régulièrement mise en avant est de bloquer leurs revenus publicitaires.\\
 
-	Ces efforts ont abouti, en 2013, à deux grandes victoires : la fermeture de l'annuaire de lien Allostreaming \cite{allostreaming} et de l'hébergeur de fichiers Megaupload. Ce dernier a subi une fin médiatisée \cite{megaupload-fermeture} suite à un raid de police et une saisie des serveurs. Son fondateur, l'extravagant ``Kim Dotcom'', dénonce le préjudice porté aux utilisateurs légitimes du service, qui ont ainsi perdu accès à leurs données personnelles \cite{megaupload-prejudice}. Le procès est prévu pour ??? et devrait se baser sur des accusations de ??? et ??? \cite{megaupload-proces}.\\
+	Ces efforts ont abouti, en 2013, à deux grandes victoires : la fermeture de l'annuaire de lien Allostreaming \cite{allostreaming-fermeture} et de l'hébergeur de fichiers Megaupload. Ce dernier a subi une fin médiatisée \cite{megaupload-fermeture} suite à un raid de police et une saisie des serveurs. Son fondateur, l'extravagant ``Kim Dotcom'', dénonce le préjudice porté aux utilisateurs légitimes du service, qui ont ainsi perdu accès à leurs données personnelles \cite{megaupload-prejudice}. Le procès pour ``association de malfaiteurs en vue d'activité économique illégale, contrefaçon et blanchiment d'argent'' pourrait bien ne jamais avoir lieu à cause de nombreux vices de procédure \cite{megaupload-proces}.\\
 
 	Mais, la demande restant fortement présente, et les barrières à l'entrée faibles, de nombreux services sont venus prendre leur place. En particulier, ``Kim Dotcom'' a mis sur pied le succeseur de Megaupload, qui a ouvert en ???. Cette fois, la légalité du service est assurée par le fait que toutes les données sont chiffrée côté client avant d'êtres envoyées vers les serveurs. Ainsi, l'hébergeur n'a aucune visibilité sur le contenu de ses utilisateurs.
 
@@ -244,13 +249,13 @@
 	\section{Vers une participation accrue de l'État ?}
 	Dans le schéma présenté en première partie, le rôle du ``législateur'' est de s'assurer du bon développement de l'économie de la culture. Mais, en la personne de l'État, sa position ne pourrait-elle pas devenir plus active ?\\
 
-	Le gouvernement français a pris pour devoir l'éducation vis à vis des problématiques du droit d'auteur. L'Hadopi a ainsi lancé en juin 2011 une campagne de publicité multi-supports (télévision, Internet, affiches, radio). La Haute Instance n'ayant conduit qu'à une seule condamnation, elle est d'ailleurs maintenant décrite par ses défenseurs comme un dispositif ``avant tout pédagogique'' \cite{podcast-industrie-musicale}.\\
+	Le gouvernement français a pris pour devoir l'éducation de la population concernant des problématiques du droit d'auteur. L'Hadopi a ainsi lancé en juin 2011 une campagne de publicité multi-supports (télévision, Internet, affiches, radio). La Haute Instance n'ayant conduit qu'à une seule condamnation, elle est d'ailleurs maintenant décrite par ses défenseurs comme un dispositif ``avant tout pédagogique'' \cite{podcast-industrie-musicale}.\\
 
 	Autre opération, lancée par le Ministère de la Culture : la Carte Musique Jeune. Lancée en 2010, elle proposait aux 12-25 ans un financement à hauteur de 50\% sur leurs achats de musique digitale (dans la limite de 50\euro par an et par personne). Cette réduction était disponible auprès quatorze marchands partenaires dont l'iTunes Store ; mais la carte permettait aussi de s'abonner à la formule d'écoute illimitée chez Deezer. De quoi inciter certains à rentrer dans un cadre légal. Cependant, le dispositif a été considéré comme un échec \cite{carte-musique-jeune-echec} et a été retiré en octobre 2012 \cite{carte-musique-jeune-arret}.\\
 
 	La modification profonde de l'économie de la culture par l'arrivée d'Internet demande une réponse politique plus forte. Les solutions actuelles au téléchargement illégal, basées sur le blocage ou la surveillance, se révèlent soit inefficaces car contournées, soit liberticides. En effet, le filtrage proposé dans les projets ACTA et SOPA/PIPA, représente une porte ouverte à une censure facilitée de la part des gouvernements et d'entreprises privées \cite{quadrature-filtrage}.\\
 
-	François Hollande, dans son programme pour les élections présidentielles de 2012, proposait de rendre possible la dépénalisation du téléchargement par le biais d'une ``licence globale''. Il s'agirait de taxer les abonnements à Internet et la publicité en ligne – comme c'est déjà le cas pour les supports vierges – afin de rémunérer les artistes \cite{licence-gloable}. L'idée a été citée à nouveau à quelques occasions, mais les détails manquent : ces taxes couvriront-elles réellement le manque à gagner induit par le piratage ? Comment répartir ces nouveaux revenus entre les artistes ? Comment rendre cette solution adaptée pour un marché maintenant global ?\\
+	François Hollande, dans son programme pour les élections présidentielles de 2012, proposait de rendre possible la dépénalisation du téléchargement par le biais d'une ``licence globale''. Il s'agirait de taxer les abonnements à Internet et la publicité en ligne – comme c'est déjà le cas pour les supports vierges – afin de rémunérer les artistes \cite{licence-globale}. L'idée a été citée à nouveau à quelques occasions, mais les détails manquent : ces taxes couvriront-elles réellement le manque à gagner induit par le piratage ? Comment répartir ces nouveaux revenus entre les artistes ? Comment rendre cette solution adaptée pour un marché maintenant global ?\\
 
 	Malgré toute ces interrogations, l'idée d'un ``forfait'' semble malgré toujours plus réaliste que la mise en place d'un blocage réussissant à être à la fois véritablement efficace et respectueux des libertés fondamentales des internautes.
 	% ------------------------------------ %
@@ -263,13 +268,13 @@
 	% ///////////////////////////////////////////////////////// %
 	% /// CONCLUSION ////////////////////////////////////////// %
 	\chapter{Conclusion}
-	Le début du siècle a apporté aux industries culturelles la plus grosse épreuve jamais rencontrée : réussir à s'adapter à l'arrivée d'Internet et de tous les bouleversements qui l'accompagne. Internet est un medium permettant à n'importe qui de montrer son talent au monde, puis de construire une relation directe avec ses admirateurs, et enfin distribuer son travail instantanément à grande échelle. Ces opportunités sont sans précédent. Mais la gratuité régnant sur Internet semblent incompatible avec l'organisation actuelle de l'économie de la culture. Le piratage pourrait porter atteinte à la diversité culturelle – la seule vraie cause à défendre.\\
+	Le début du siècle a apporté aux industries culturelles la plus grosse épreuve jamais rencontrée : réussir à s'adapter à l'arrivée d'Internet et de tous les bouleversements qui l'accompagne. Internet est un medium permettant à n'importe qui de montrer son talent au monde, puis de construire une relation directe avec ses admirateurs, et enfin distribuer son travail instantanément à grande échelle. Ces opportunités sont sans précédent. Mais la gratuité régnant sur Internet semblent incompatible avec l'organisation actuelle de l'économie de la culture. Le piratage pourrait porter atteinte à la diversité culturelle – la seule vraie cause à défendre.\\
 
-	Les grands acteurs de cette industrie ont donc tout d'abord tenté de limiter le partage par des moyens techniques, en asséchant la source à l'aide de verrous numériques. Cette mesure s'est heurtée à une des lois fondamentales de l'informatique : toute sécurité peut être contournée. Les gouvernements et grandes corporations ont donc tourné leur attention vers l'accès lui-même, mettant sur pied des projets de loi prévoyant le blocage du piratage au niveau des fournisseurs d'accès Internet. Mais ces tentatives sont vouées à l'échec. Le processus de promulgation des lois est trop lent comparé à la vitesse du progrès technologique : Hadopi était par exemple déjà techniquement dépassée avant sa mise en application.\\
+	Les grands acteurs de cette industrie ont donc tout d'abord tenté de limiter le partage par des moyens techniques, en asséchant la source à l'aide de verrous numériques. Cette mesure s'est heurtée à une des lois fondamentales de l'informatique : toute sécurité peut être contournée. Les gouvernements et grandes corporations ont donc tourné leur attention vers l'accès lui-même, mettant sur pied des projets de loi prévoyant le blocage du piratage au niveau des fournisseurs d'accès Internet. Mais ces tentatives sont vouées à l'échec. Le processus de promulgation des lois est trop lent comparé à la vitesse du progrès technologique : Hadopi était par exemple déjà techniquement dépassée avant sa mise en application.\\
 
 	Il faudra alors tenter de s'adapter à ce nouveau paradigme plutôt que de travailler à sa suppression. De nombreuses solutions alternatives ont émergé sous la forme de nouveaux modes de production, de distribution et de consommation.
 	
-	Une interrogation subsiste : quelle place pourra prendre l'État dans l'économie culturelle de demain ?
+	Une interrogation subsiste : quelle place pourra prendre l'État dans l'économie culturelle de demain ?
 	% ///////////////////////////////////////////////////////// %
 
 
